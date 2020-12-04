@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maps</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div id="maps"></div>
+ <h3>here is a map</h3>
+ <script>
+ 	function initMap() {
+				var place = {
+					lat: 6.342450,
+					lng: 5.633840
+				}
+    var location = { lat: 6.309881,
+                     lng: 5.635625};
+    var map = new google.maps.Map(document.getElementById("maps"), {
+        zoom: 4,
+        center: place,
+	});
+	var marker = new google.maps.Marker({
+		position: location,
+		map: map
+	})
+}
+ </script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN7Q7daEP8W4pyppE5VfeG2UqsTHy7UNc&callback=initMap"></script>
+</body>
+</html>
