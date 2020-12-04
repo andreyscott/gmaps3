@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+
+}
+	#maps {
+		height: 800px;
+		width: 400px;
+}
+};
+
+body {
+	background-color: black;
+	color: black;
+}
+h3 {
+	color: red;
+}
